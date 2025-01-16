@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family                 : sans-serif;
+    display                     : flex;
+    justify-content             : center;
+    align-items                 : center;
+    background-color            : #a5bac6;
+    padding                     : 1rem;
+    user-select                 : none;
+    background-color: #000000;
+}
+
+.questions{
+    display: flex;
+    flex-direction:column ;
+}
+.questions > *{
+    border: none;
+    height: 50px;
+    background-color: #252728;
+    color: #fff;
+    cursor: pointer;
+
+}
+.questions > *:hover{
+    background-color: #333536;
+}
+
+.calculator-container{
+    /* border: 1px solid #000; */
+    width: 400px;
+    background-color: #1A1C1E;
+    color: #fff;
+    border-radius: .5rem;
+    padding-top: 1rem;
+    overflow: hidden;
+}
+
+
+.calculator-keys{
+    border-top: 1px solid #7589dc;
+}
+.calculator-header{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.display-container{  
+    /* border: 1px solid green; */
+    height: 180px;   
+    text-align: left;     
+    padding-inline: 1rem;                                              
+}
+.calculator-keys{
+    /* border: 1px solid blue; */
+}
+
+.main-keys{
+    /* border: 3px solid red; */
+    
+}
+
+.main-keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(4, 1fr);    /* 4 equal rows */
+    gap: 2px; /* Optional: Adjust space between keys */
+    margin: 0 auto; /* Optional: Center the grid */
+
+}
+.main-keys > * {
+    height: 50px;
+    background-color: #7589dc;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.main-keys > *:hover {
+   
+    background-color: #5c6eb6;
+   
+}
+
+.main-keys .key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Adjust button background */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: Add a border to buttons */
+    border-radius: 5px; /* Optional: Rounded corners for buttons */
+    font-size: 1.2rem; /* Adjust text size */
+    cursor: pointer;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main-keys .key:hover {
+    background-color: #ddd; /* Change background on hover */
+}
+
+
