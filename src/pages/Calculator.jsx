@@ -108,35 +108,40 @@ export default function Calculator() {
     return(
         <div className="calculator-container">
             <div className="calculator-header">
-                <p>Kristenz Mingoy - IT3A</p> 
+                <p>KRISTENZ MINGOY - IT3A</p> 
             </div>
-            <div className="display-container">
-                <p>{prevDisplay}</p>
-                <h2>{display}</h2>
-            </div>
-            <div className="button-container">
-                <div className="calculator-keys">
-                    <div className="questions">
-                        <Key label={"What I learned?"} clickHandler={questionOne}/>
-                        <Key label={"What I want to learn?"} clickHandler={questionTwo}/>
-                        <Key label={"How will I learn?"} clickHandler={questionThree}/>
-                    </div>
-                    <div className='main-keys'>
-                        <Key label={7} clickHandler={keySeven}/>
-                        <Key label={8} clickHandler={keyEight}/>
-                        <Key label={9} clickHandler={keyNine}/>
-                        <Key label={4} clickHandler={keyFour}/>
-                        <Key label={5} clickHandler={keyFive}/>
-                        <Key label={6} clickHandler={keySix}/>
-                        <Key label={1} clickHandler={keyOne}/>
-                        <Key label={2} clickHandler={keyTwo}/>
-                        <Key label={3} clickHandler={keyThree}/>
-                        <Key label={"RESET"} clickHandler={clearClickHandler}/>
-                        <Key label={0} clickHandler={keyZero}/>
-                        <Key label={'NAME'} clickHandler={showFullName}/>  
+
+            <div className="calc-main-container">
+
+                <div className="display-container">
+                    <p>{prevDisplay}</p>
+                    <h2>{display}</h2>
+                </div>
+                <div className="button-container">
+                    <div className="calculator-keys">
+                        <div className="questions">
+                            <Key label={"What I learned?"} clickHandler={questionOne}/>
+                            <Key label={"What I want to learn?"} clickHandler={questionTwo}/>
+                            <Key label={"How will I learn?"} clickHandler={questionThree}/>
+                        </div>
+                        <div className='main-keys'>
+                            <Key label={7} clickHandler={keySeven}/>
+                            <Key label={8} clickHandler={keyEight}/>
+                            <Key label={9} clickHandler={keyNine}/>
+                            <Key label={4} clickHandler={keyFour}/>
+                            <Key label={5} clickHandler={keyFive}/>
+                            <Key label={6} clickHandler={keySix}/>
+                            <Key label={1} clickHandler={keyOne}/>
+                            <Key label={2} clickHandler={keyTwo}/>
+                            <Key label={3} clickHandler={keyThree}/>
+                            <Key label={"RESET"} clickHandler={clearClickHandler}/>
+                            <Key label={0} clickHandler={keyZero}/>
+                            <Key label={'NAME'} clickHandler={showFullName}/>  
+                        </div>
                     </div>
                 </div>
             </div>
+            
                  
 
         </div>
