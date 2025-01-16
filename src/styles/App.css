@@ -35,8 +35,8 @@ body{
     border-radius: .5rem;
     padding-top: 1rem;
     overflow: hidden;
+    border: 2px solid #333;
 }
-
 
 .calculator-keys{
     border-top: 1px solid #7589dc;
@@ -71,7 +71,7 @@ body{
 }
 .main-keys > * {
     height: 50px;
-    background-color: #7589dc;
+    background-color: #657acf;
     border: none;
     color: #fff;
     cursor: pointer;
